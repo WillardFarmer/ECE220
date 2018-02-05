@@ -1,16 +1,19 @@
 #include <stdio.h>
-#include <string.h>
-
-#define VAR 20
 
 
-int main(void)
-{
-    char chr [VAR] = "a";
+int main(void){
+    int test;
+    float num;
 
-    printf("%d\n", VAR);
+    test = scanf("%f", &num);
 
-    return 0;
+    if(test == 0 || num < 0){
+    printf("\n%f , %d\n",num,test);
+    }else{
+	printf("f u feg");
+    }
+
+return 0;
 }
 
 
