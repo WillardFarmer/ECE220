@@ -2,17 +2,10 @@
 
 
 int main(void){
-    int test;
-    float num;
+    int i = 0;
 
-    test = scanf("%f", &num);
-
-    if(test == 0 || num < 0){
-    printf("\n%f , %d\n",num,test);
-    }else{
-	printf("f u feg");
-    }
-
+    while(i++ < 5)
+	printf("%i\n",i);
 return 0;
 }
 
