@@ -9,7 +9,7 @@ int main(void)
     int option;		//option
     int min = 0;
 
-    const char *items[3] = {"Cheese Pizza", "Other", "Books"}; //Abstraction
+    const char *items[] = {"Cheese Pizza", "Other", "Books"}; //Abstraction
     double budget[3] = {-1,-1,-1};
     double balance[3] = {0, 0, 0};
     double expenses[3] = {0, 0, 0};

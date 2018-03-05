@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-
 int main(void){
-    int i = 0;
 
-    while(i++ < 5)
-	printf("%i\n",i);
+    char ch;
+    ch = getch();
+
+    while((ch = getch()) != '#'){
+	putchar(ch);
+    }
 return 0;
 }
 
