@@ -31,7 +31,6 @@ int main(void)
 	for(int j = 0;j < 3; j++){
 	    fscanf(fp, "%lf", &buff);
 	    expenses[j] = expenses[j] + buff;
-	    /*printf("[DEBUG] expenses[%i] = %d, buff = %lf\n", j, expenses[j], buff);*/
 	}
     }
     fclose(fp);
