@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -g   CMakeFiles/lab_3.dir/io.c.o CMakeFiles/lab_3.dir/template.c.o  -o lab_3 

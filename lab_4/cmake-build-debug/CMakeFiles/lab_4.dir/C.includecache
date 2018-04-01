@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/willard/ECE220/lab_4/buffer.c
+stdio.h
+-
+io.h
+/home/willard/ECE220/lab_4/io.h
+buffer.h
+/home/willard/ECE220/lab_4/buffer.h
+
+/home/willard/ECE220/lab_4/buffer.h
+
+/home/willard/ECE220/lab_4/io.c
+stdio.h
+-
+io.h
+/home/willard/ECE220/lab_4/io.h
+
+/home/willard/ECE220/lab_4/io.h
+
+/home/willard/ECE220/lab_4/lab_4.c
+stdio.h
+-
+io.h
+/home/willard/ECE220/lab_4/io.h
+buffer.h
+/home/willard/ECE220/lab_4/buffer.h
+

@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc -g   CMakeFiles/lab_2.dir/lab_2.c.o  -o lab_2 

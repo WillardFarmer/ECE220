@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/willard/ECE220/lab_3/io.c
+stdio.h
+-
+io.h
+/home/willard/ECE220/lab_3/io.h
+
+/home/willard/ECE220/lab_3/io.h
+
+/home/willard/ECE220/lab_3/template.c
+stdio.h
+-
+io.h
+/home/willard/ECE220/lab_3/io.h
+

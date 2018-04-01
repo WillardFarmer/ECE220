@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "io.h"
 
-//#define _CRT_SECURE_NO_WARNINGS
-
 #define BUFFER_SIZE 64
 
 #define MIN     0
@@ -12,7 +10,6 @@
 #define MINMAX  4
 #define ODDEVEN 5
 
-// prototypes of your functions you need to write
 
 // this function fills input buffer using values
 // obtained with the function get_value()
@@ -32,7 +29,6 @@ void transferring(int[], int[]);
 void submitting(int[]);
 
 
-// two functions provided to you (defined in io.h and io.c) are:
 // int get_value(void);
 //       this function generates a single value
 //       you use it to obtain this value and put it into an input buffer
@@ -42,7 +38,7 @@ void submitting(int[]);
 
 
 int main(void) {
-    
+
     int inputBuffer[BUFFER_SIZE] = {0};
     int localBuffer[BUFFER_SIZE] = {0};
     int outputBuffer[BUFFER_SIZE]= {0};
@@ -58,13 +54,14 @@ int main(void) {
 
         reading(inputBuffer);
     }
+    printf("-1 value has been reached.");
     return 0;
 }
 
 void reading(int inputBuffer[]) {
 
-    inputBuffer[0] = get_value();
-    inputBuffer[1] = get_value();
+    inputBuffer[0] = get_value(); //mode
+    inputBuffer[1] = get_value(); //number of values
     for(int i = 0; i < inputBuffer[1] ; i++ ){
         inputBuffer[i+2] = get_value();
     }
@@ -170,20 +167,20 @@ void processing(int localBuffer[]) {
 void transferring(int sourceBuffer[], int destinationBuffer[]) {
 
 
-    if( sourceBuffer[1] > 0 ){
+    if( sourceBuffer[1] > 0 ){ //Checks for if processing has been run yet
 
-        for(int i = 0; i < sourceBuffer[1] + 2 ; i++) {
+        for(int i = 0; i < sourceBuffer[1] + 2 ; i++) { //Move input buffer to local buffer
             destinationBuffer[i] = sourceBuffer[i];
         }
 
     }else{
 
-        sourceBuffer[1] *= -1; //Reset from flag for output
+        sourceBuffer[1] *= -1; //Reset flag for output
 
-        for(int i = 0; i < 4 ; i++)
+        for(int i = 0; i < 4 ; i++) //Move local buffer to output buffer
             destinationBuffer[i] = sourceBuffer[i];
 
-        printf("ID:                %d\n", sourceBuffer[0]);
+        printf("ID:                %d\n", sourceBuffer[0]);  //Output values
         printf("Number of points:  %d\n", sourceBuffer[1]);
         printf("Results            %d", sourceBuffer[2]);
         if( sourceBuffer[1] == 2 ){

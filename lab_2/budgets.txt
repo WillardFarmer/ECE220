@@ -1,0 +1,4 @@
+Number of weeks: 3
+Cheese Pizza = 5.56  
+       Other = 21.39 
+       Books = 0.00  
