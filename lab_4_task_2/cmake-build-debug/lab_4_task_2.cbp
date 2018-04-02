@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="lab_4_task_2" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/willard/ECE220/lab_4_task_2/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/willard/ECE220/lab_4_task_2/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/willard/ECE220/lab_4_task_2/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="lab_4">
+         <Option output="/home/willard/ECE220/lab_4_task_2/cmake-build-debug/lab_4" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/willard/ECE220/lab_4_task_2/cmake-build-debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab_4" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="lab_4/fast">
+         <Option output="/home/willard/ECE220/lab_4_task_2/cmake-build-debug/lab_4" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/willard/ECE220/lab_4_task_2/cmake-build-debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab_4/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/willard/ECE220/lab_4_task_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/buffer.c">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/buffer.h">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/io.c">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/io.h">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/lab_4.c">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/memory.c">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/memory.h">
+         <Option target="lab_4"/>
+      </Unit>
+      <Unit filename="/home/willard/ECE220/lab_4_task_2/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

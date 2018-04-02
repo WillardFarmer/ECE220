@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc  -g   CMakeFiles/lab_4.dir/io.c.o CMakeFiles/lab_4.dir/lab_4.c.o CMakeFiles/lab_4.dir/buffer.c.o CMakeFiles/lab_4.dir/memory.c.o  -o lab_4 
