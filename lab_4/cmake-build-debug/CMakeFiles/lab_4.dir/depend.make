@@ -12,3 +12,6 @@ CMakeFiles/lab_4.dir/lab_4.c.o: ../buffer.h
 CMakeFiles/lab_4.dir/lab_4.c.o: ../io.h
 CMakeFiles/lab_4.dir/lab_4.c.o: ../lab_4.c
 
+CMakeFiles/lab_4.dir/memory.c.o: ../memory.c
+CMakeFiles/lab_4.dir/memory.c.o: ../memory.h
+

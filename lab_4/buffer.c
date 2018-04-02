@@ -7,19 +7,18 @@ int outputBuffer[BUFFER_SIZE]= {0};
 
 
 
-void printBuffer(char* name, int Buffer[]){
+void printBuffer(const char* name, const int* Buffer){
 
-    printf("test");
-    fflush(stdout);
-    printf("%s = ", name);
+    printf("%-12s = [%d", name, Buffer[0]);
+    for(int i = 1; i < Buffer[1] + 2; i++){
+        printf(", %d", Buffer[i]);
+    }
+    printf("]\n");
 
 }
 
-
 int reading() {
 
-    printf("reading");
-    fflush(stdout);
     inputBuffer[0] = get_value();
     if(inputBuffer[0] == -1){return -1;}
 
@@ -28,27 +27,29 @@ int reading() {
         inputBuffer[i+2] = get_value();
     }
 
-    //Print
-    char * Buffername = "localBuffer";
-    printBuffer(Buffername, inputBuffer);
+    printBuffer("inputBuffer", inputBuffer);
 
     return inputBuffer[0];
 }
+void transferringTOlocal(int localBuffer[]) {
 
-void transferringTOlocal(int isData, int localBuffer[]) {
-
-    localBuffer[0] = isData;
-    localBuffer[1] = get_value(); //number of values
-    for(int i = 0; i < localBuffer[1] ; i++ ){
-        localBuffer[i+2] = get_value();
+    for(int i = 0; i < inputBuffer[1] + 2 ; i++) { //Move input buffer to local buffer
+        localBuffer[i] = inputBuffer[i];
     }
 
-    //Print
-    char * Buffername = "localBuffer";
-    printBuffer(Buffername, localBuffer);
+    printBuffer("localBuffer", localBuffer);
 
 }
 void transferringFROMlocal(int localBuffer[]) {
+
+    for(int i = 0; i < localBuffer[1] + 2 ; i++) { //Move input buffer to local buffer
+        outputBuffer[i] = localBuffer[i];
+    }
+
+    printBuffer("outputBuffer", localBuffer);
+
 }
 void submitting() {
+    submit_results(outputBuffer);
+    printf("\n");
 }

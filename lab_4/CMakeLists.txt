@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(lab_4
         io.c
         io.h
-        lab_4.c buffer.c buffer.h)
+        lab_4.c
+        buffer.c
+        buffer.h)

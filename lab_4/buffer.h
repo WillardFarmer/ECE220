@@ -1,6 +1,6 @@
 #define BUFFER_SIZE 64
-void printBuffer(char*, int[]);
+void printBuffer(const char*, const int*);
 int reading();
-void transferringTOlocal(int, int[]);
+void transferringTOlocal(int[]);
 void transferringFROMlocal(int[]);
 void submitting();
