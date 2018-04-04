@@ -22,7 +22,10 @@ int reading() {
 
     int *smallBuffer = (int *)my_malloc(2*sizeof(int)); // mode, data #, NULL
     smallBuffer[0] = get_value();
-    if(smallBuffer[0] == -1){return -1;}
+    if (smallBuffer[0] == -1) {
+        my_free(smallBuffer);
+        return -1;
+    }
     smallBuffer[1] = get_value();
 
     inputBuffer = (int *)my_malloc((smallBuffer[1] + 2)*sizeof(int));
@@ -37,7 +40,8 @@ int reading() {
 
     my_free((void *)smallBuffer);
 }
-int * transferringTOlocal(int localBuffer[]) {
+
+int *transferringTOlocal(int *localBuffer) {
 
     localBuffer = (int *)my_malloc((inputBuffer[1] + 2)*sizeof(int));
 
