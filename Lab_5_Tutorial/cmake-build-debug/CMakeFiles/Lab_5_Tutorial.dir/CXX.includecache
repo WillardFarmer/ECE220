@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/willard/ECE220/Lab_5_Tutorial/BankAccount.cpp
+iostream
+-
+cstring
+-
+BankAccount.h
+/home/willard/ECE220/Lab_5_Tutorial/BankAccount.h
+
+/home/willard/ECE220/Lab_5_Tutorial/BankAccount.h
+
+/home/willard/ECE220/Lab_5_Tutorial/main.cpp
+iostream
+-
+BankAccount.h
+/home/willard/ECE220/Lab_5_Tutorial/BankAccount.h
+

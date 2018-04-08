@@ -1,0 +1,1 @@
+/usr/lib/ccache/c++   -g   CMakeFiles/Lab_5.dir/main.cpp.o  -o Lab_5 
